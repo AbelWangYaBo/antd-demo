@@ -1,0 +1,43 @@
+@import "./variables.less";
+
+:root {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+body {
+  margin: 0;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.app-bar-container {
+  background-color: @primary-color;
+  color: #fff;
+  height: 64px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  .btn-sidebar {
+    font-size: 24px;
+    line-height: 64px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+  }
+  .app-bar-title {
+    font-size: 24px;
+    line-height: 64px;
+    font-family: "Merck";
+    margin-left: 24px;
+    flex: 1;
+  }
+  .app-bar-collapse {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    .account {
+      cursor: pointer;
+    }
+  }
+}
