@@ -6,7 +6,13 @@ import {
   LogoutOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
-const Index = () => {
+const Index = ({
+  toggleSidebar,
+  changeTheme,
+}: {
+  toggleSidebar: () => void;
+  changeTheme: (type: "purple" | "light" | "dark") => void;
+}) => {
   const items: MenuProps["items"] = [
     {
       key: "1",
@@ -37,10 +43,40 @@ const Index = () => {
   ];
   return (
     <div className="app-bar-container">
-      <span className="btn-sidebar">
+      <span className="btn-sidebar" onClick={toggleSidebar}>
         <MenuOutlined />
       </span>
-      <span className="app-bar-title">MMIOMS</span>
+      <div className="app-bar-title">
+        <span
+          className="app-bar-title"
+          style={{
+            marginRight: 20,
+          }}
+        >
+          MMIOMS
+        </span>
+        <Button
+          type="text"
+          onClick={() => changeTheme("purple")}
+          style={{ color: "#ffffff" }}
+        >
+          Purple Sidebar
+        </Button>
+        <Button
+          type="text"
+          onClick={() => changeTheme("light")}
+          style={{ color: "#ffffff" }}
+        >
+          Light Sidebar
+        </Button>
+        <Button
+          type="text"
+          onClick={() => changeTheme("dark")}
+          style={{ color: "#ffffff" }}
+        >
+          Dark Sidebar
+        </Button>
+      </div>
       <div className="app-bar-collapse">
         <Dropdown
           menu={{ items }}

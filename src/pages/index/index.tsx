@@ -1,13 +1,7 @@
 import {
-  AppstoreOutlined,
-  ContainerOutlined,
-  DesktopOutlined,
-  MailOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
-  PieChartOutlined,
 } from "@ant-design/icons";
-import type { MenuProps } from "antd";
 import { Menu, Button } from "antd";
 import { MENU_LIST } from "@/constants";
 import { useState } from "react";
@@ -22,6 +16,7 @@ const Index = () => {
     setCollapsed(!collapsed);
   };
 
+  return <div>Page Index</div>;
   return (
     <div>
       <div style={{ width: 300 }}>

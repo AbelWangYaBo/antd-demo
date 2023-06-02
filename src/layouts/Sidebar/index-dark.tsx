@@ -57,9 +57,7 @@ const Index = ({
         </h2>
       )}
       <Menu
-        className="sidebar-purple"
-        defaultSelectedKeys={["1", "2", "2"]}
-        defaultOpenKeys={["1", "2"]}
+        theme="dark"
         mode="inline"
         inlineCollapsed={collapsed}
         items={MENUS}

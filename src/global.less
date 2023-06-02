@@ -10,7 +10,14 @@ body {
 .ml5 {
   margin-left: 5px;
 }
-
+.app-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  .app-main {
+    flex: 1;
+  }
+}
 .app-bar-container {
   background-color: @primary-color;
   color: #fff;
@@ -18,6 +25,11 @@ body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
   .btn-sidebar {
     font-size: 24px;
     line-height: 64px;
@@ -39,5 +51,106 @@ body {
     .account {
       cursor: pointer;
     }
+  }
+}
+
+.sidebar-wrapper {
+  height: 100vh;
+  overflow: auto;
+  background-color: purple;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  .sidebar-purple {
+    background-color: purple;
+    color: #ffffff;
+    &.ant-menu-light {
+      .ant-menu-item-selected {
+        background-color: #eb2f96;
+        color: #ffffff;
+      }
+      .ant-menu {
+        :not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) {
+          &.ant-menu-item:hover,
+          &.ant-menu-submenu-title:hover,
+          .ant-menu-submenu-title:hover {
+            color: #eb2f96;
+            background-color: rgba(0, 0, 0, 0.06);
+            // background-color: #fff0f6;
+          }
+          &.ant-menu-item:active {
+            background-color: rgba(0, 0, 0, 0.06);
+          }
+        }
+        .ant-menu-submenu-open {
+          > .ant-menu-submenu-title {
+            color: #eb2f96;
+            background-color: rgba(0, 0, 0, 0.06);
+          }
+        }
+      }
+    }
+    .ant-menu-submenu-selected {
+      > .ant-menu-submenu-title {
+        color: #eb2f96;
+        // color: #fff;
+      }
+    }
+    .ant-menu-light
+      .ant-menu-item:hover:not(.ant-menu-item-selected):not(
+        .ant-menu-submenu-selected
+      ),
+    .ant-menu-light
+      > .ant-menu
+      .ant-menu-item:hover:not(.ant-menu-item-selected):not(
+        .ant-menu-submenu-selected
+      ),
+    .ant-menu-light
+      .ant-menu-submenu-title:hover:not(.ant-menu-item-selected):not(
+        .ant-menu-submenu-selected
+      ),
+    .ant-menu-light
+      > .ant-menu
+      .ant-menu-submenu-title:hover:not(.ant-menu-item-selected):not(
+        .ant-menu-submenu-selected
+      ) {
+      color: #eb2f96;
+    }
+    .ant-menu-light:not(.ant-menu-horizontal) .ant-menu-submenu-title:active,
+    .ant-menu-light
+      > .ant-menu:not(.ant-menu-horizontal)
+      .ant-menu-submenu-title:active {
+      background-color: rgba(0, 0, 0, 0.06);
+    }
+  }
+  .ant-menu {
+    flex: 1;
+    &:not(.ant-menu-inline-collapsed) {
+      width: 300px;
+      max-width: 100%;
+    }
+    .ant-menu-inline {
+      .ant-menu-item {
+        min-height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: auto;
+        white-space: break-spaces;
+        line-height: 20px;
+        position: relative;
+        .ant-menu-title-content {
+          white-space: break-spaces;
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .sidebar-container {
+    top: 0;
+    left: 0;
+    z-index: 9;
   }
 }

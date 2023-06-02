@@ -1,558 +1,489 @@
+
 export const MENU_LIST = [
   {
     label: "Home",
-    key: "0",
-    path: '/'
+    key: "/",
+    path: '/',
+    iconkey: 'HomeOutlined',
   },
   {
     label: "Masters",
-    key: "1",
+    key: "/masters",
+    iconkey: 'AppstoreAddOutlined',
     children: [
       {
         label: "Master List",
-        key: "2",
-        chidlren: [
+        key: "/masters/master-list",
+        iconkey: 'FolderOpenOutlined',
+        children: [
           {
             label: "Read Data From SAP",
-            key: "3"
+            key: "/masters/master-list/read-data-from-sap"
           },
           {
             label: "Department",
-            key: "4"
+            key: "/masters/master-list/department"
           },
           {
             label: "Zone Area",
-            key: "5"
+            key: "/masters/master-list/zone-area"
           },
           {
             label: "State City",
-            key: "6"
+            key: "/masters/master-list/state-city"
           },
           {
             label: "MVGR",
-            key: "7"
+            key: "/masters/master-list/mvgr"
           },
           {
             label: "SBU",
-            key: "8"
+            key: "/masters/master-list/sbu"
           },
           {
             label: "Products",
-            key: "9"
+            key: "/masters/master-list/products"
           },
           {
             label: "Material Pricing Group",
-            key: "10"
+            key: "/masters/master-list/material-pricing-group"
           },
           {
             label: "CnF Excluded Items",
-            key: "11"
+            key: "/masters/master-list/cnf-excluded-items"
           },
           {
             label: "Map Customer to Distributor",
-            key: "12"
+            key: "/masters/master-list/map-customer-to-distributor"
           },
           {
             label: "Map Customer to Departments",
-            key: "13"
+            key: "/masters/master-list/map-customer-to-departments"
           },
           {
             label: "Approving Limits",
-            key: "14"
+            key: "/masters/master-list/approving-limits"
           },
           {
             label: "Zone-wise ASP",
-            key: "15"
+            key: "/masters/master-list/zone-wise-asp"
           },
           {
             label: "Product-wise Limit Price",
-            key: "16"
+            key: "/masters/master-list/product-wise-limit-price"
           },
           {
             label: "Product Wise Toll Center",
-            key: "17"
+            key: "/masters/master-list/product-wise-toll-center"
           },
           {
             label: "Distributor - Product wise Mapping",
-            key: "18"
+            key: "/masters/master-list/distributor---product-wise-mapping"
           },
           {
             label: "Department Order Type",
-            key: "19"
+            key: "/masters/master-list/department-order-type"
           },
           {
             label: "Map Article To CnF",
-            key: "20"
+            key: "/masters/master-list/map-article-to-cnf"
           },
           {
             label: "Default Supply Plant",
-            key: "21"
+            key: "/masters/master-list/default-supply-plant"
           },
           {
             label: "Product With Default Discount",
-            key: "22"
+            key: "/masters/master-list/product-with-default-discount"
           },
           {
             label: "NID",
-            key: "23"
+            key: "/masters/master-list/nid"
           },
           {
             label: "Block Customer from Order Creation",
-            key: "24"
+            key: "/masters/master-list/block-customer-from-order-creation"
           },
           {
             label: "Products with End User Document",
-            key: "25"
+            key: "/masters/master-list/products-with-end-user-document"
           },
           {
             label: "Upload Expected Delivery Dates for Pending Orders",
-            key: "26"
+            key: "/masters/master-list/upload-expected-delivery-dates-for-pending-orders"
           },
           {
             label: "PESO Products",
-            key: "27"
+            key: "/masters/master-list/peso-products"
           },
           {
             label: "Customer-wise Product-wise CnF Mapping",
-            key: "28"
+            key: "/masters/master-list/customer-wise-product-wise-cnf-mapping"
           },
           {
             label: "Multiplexing Kit CSC Approvers",
-            key: "29"
+            key: "/masters/master-list/multiplexing-kit-csc-approvers"
           },
           {
             label: "SBU wise CnF",
-            key: "30"
+            key: "/masters/master-list/sbu-wise-cnf"
           },
           {
             label: "Customer / Product / SBU Shipping Instructions",
-            key: "31"
+            key: "/masters/master-list/customer-product-sbu-shipping-instructions"
           },
           {
             label: "Send Mail for Single Batch Single Customer Orders",
-            key: "32"
+            key: "/masters/master-list/send-mail-for-single-batch-single-customer-orders"
           },
           {
             label: "Sales Group",
-            key: "33"
+            key: "/masters/master-list/sales-group"
           },
           {
             label: "Rate Contract Customers",
-            key: "34"
+            key: "/masters/master-list/rate-contract-customers"
           },
           {
             label: "Rate Contract Errors",
-            key: "35"
+            key: "/masters/master-list/rate-contract-errors"
           },
           {
             label: "Customer segment Mapping",
-            key: "36"
+            key: "/masters/master-list/customer-segment-mapping"
           }
         ],
-
       },
       {
         label: "Access Control",
-        key: "37",
+        key: "/masters/access-control",
+        iconkey: 'SettingFilled',
         children: [
           {
             label: "Employees",
-            key: "Employees"
+            key: "/masters/access-control/employees", "iconkey": "UserAddOutlined"
           },
           {
             label: "Unlock Employee",
-            key: "Unlock Employee"
+            key: "/masters/access-control/unlock-employee", "iconkey": "UserDeleteOutlined"
           },
           {
             label: "Assign Roles",
-            key: "Assign Roles"
+            key: "/masters/access-control/assign-roles", "iconkey": "UserSwitchOutlined"
           },
           {
             label: "Customer",
-            key: "Customer"
+            key: "/masters/access-control/customer", "iconkey": "MacCommandOutlined"
           },
           {
             label: "SBU Employee Mapping for Selection",
-            key: "SBU Employee Mapping for Selection"
+            key: "/masters/access-control/sbu-employee-mapping-for-selection", "iconkey": "UsergroupAddOutlined"
           },
           {
             label: "CnF",
-            key: "CnF"
+            key: "/masters/access-control/cnf", "iconkey": "UsergroupDeleteOutlined"
           },
           {
             label: "Toll Center",
-            key: "Toll Center"
+            key: "/masters/access-control/toll-center", "iconkey": "UserOutlined"
           },
           {
             label: "Central Warehouse",
-            key: "Central Warehouse"
+            key: "/masters/access-control/central-warehouse", "iconkey": "ShopOutlined"
           }
         ],
-
       },
       {
         label: "Channel 13 Masters",
-        key: "38",
+        key: "/masters/channel-13-masters",
+        iconkey: 'HourglassOutlined',
         children: [
           {
             label: "Sending mail after CSC Approval",
-            key: "Sending mail after CSC Approval"
+            key: "/masters/channel-13-masters/sending-mail-after-csc-approval"
           },
           {
             label: "Customer-wise Product-wise Price",
-            key: "Customer-wise Product-wise Price"
+            key: "/masters/channel-13-masters/customer-wise-product-wise-price"
           }
         ],
-
       },
       {
         label: "Shipment Tracking",
-        key: "39",
+        key: "/masters/shipment-tracking",
         children: [
           {
             label: "Sigma Customer",
-            key: "Sigma Customer"
+            key: "/masters/shipment-tracking/sigma-customer"
           },
           {
             label: "Banner",
-            key: "Banner"
+            key: "/masters/shipment-tracking/banner"
           },
           {
             label: "Employee - Sigma Customer / Plant Mapping",
-            key: "Employee - Sigma Customer / Plant Mapping"
+            key: "/masters/shipment-tracking/employee---sigma-customer-plant-mapping"
           },
           {
             label: "Expected Delivery Days",
-            key: "Expected Delivery Days"
+            key: "/masters/shipment-tracking/expected-delivery-days"
           },
           {
             label: "Activate Transporter Login",
-            key: "Activate Transporter Login"
+            key: "/masters/shipment-tracking/activate-transporter-login"
           },
           {
             label: "Transporter Mapping",
-            key: "Transporter Mapping"
+            key: "/masters/shipment-tracking/transporter-mapping"
           },
           {
             label: "Opt Out Email",
-            key: "Opt Out Email"
+            key: "/masters/shipment-tracking/opt-out-email"
           },
           {
             label: "Opt Out SMS",
-            key: "Opt Out SMS"
+            key: "/masters/shipment-tracking/opt-out-sms"
           }
         ],
-
       },
       {
         label: "Complaint Category",
-        key: "40",
-
+        key: "/masters/complaint-category"
       },
       {
         label: "Perennial Non Available Items",
-        key: "41",
-
+        key: "/masters/perennial-non-available-items"
       },
       {
         label: "Attachment",
-        key: "42",
-
+        key: "/masters/attachment"
       },
       {
         label: "Upload Payment Customer",
-        key: "43",
-
+        key: "/masters/upload-payment-customer"
       },
       {
         label: "Customer Annexure Master",
-        key: "44",
-
+        key: "/masters/customer-annexure-master"
       }
     ],
-
   },
   {
     label: "Orders",
-    key: "45",
+    key: "/orders",
     children: [
       {
         label: "Create / Edit",
-        key: "46",
-
+        key: "/orders/create-edit"
       },
       {
         label: "Bulk Cancellation of Orders",
-        key: "47",
-
+        key: "/orders/bulk-cancellation-of-orders"
       },
       {
         label: "Delete",
-        key: "48",
-
+        key: "/orders/delete"
       },
       {
         label: "Pending For EUD Approval",
-        key: "49",
-
+        key: "/orders/pending-for-eud-approval"
       },
       {
         label: "Pending For Rate Contract Approval",
-        key: "50",
-
+        key: "/orders/pending-for-rate-contract-approval"
       },
       {
         label: "Pending For My Approval",
-        key: "51",
-
+        key: "/orders/pending-for-my-approval"
       },
       {
         label: "Pending For CSC Approval",
-        key: "52",
-
+        key: "/orders/pending-for-csc-approval"
       },
       {
         label: "Order History",
-        key: "53",
-
+        key: "/orders/order-history"
       },
       {
         label: "Orders in Error",
-        key: "54",
-
+        key: "/orders/orders-in-error"
       },
       {
         label: "Orders Stuck for SAP Intgegration",
-        key: "55",
-
+        key: "/orders/orders-stuck-for-sap-intgegration"
       }
     ],
-
   },
   {
     label: "MIS",
-    key: "56",
+    key: "/mis",
     children: [
       {
         label: "Orders",
-        key: "57",
-
+        key: "/mis/orders"
       },
       {
         label: "Invoices",
-        key: "58",
-
+        key: "/mis/invoices"
       },
       {
         label: "Sales",
-        key: "59",
-
+        key: "/mis/sales"
       },
       {
         label: "Orders V/S Sales",
-        key: "60",
-
+        key: "/mis/orders-vs-sales"
       },
       {
         label: "Orders V/S Sales - Schedule Lines",
-        key: "61",
-
+        key: "/mis/orders-vs-sales---schedule-lines"
       },
       {
         label: "EUD Approval Report",
-        key: "62",
-
+        key: "/mis/eud-approval-report"
       },
       {
         label: "Employee wise Sales Mapping Download",
-        key: "63",
-
+        key: "/mis/employee-wise-sales-mapping-download"
       },
       {
         label: "Outstanding",
-        key: "64",
-
+        key: "/mis/outstanding"
       },
       {
         label: "Stock",
-        key: "65",
-
+        key: "/mis/stock"
       },
       {
         label: "LR Details",
-        key: "66",
-
+        key: "/mis/lr-details"
       },
       {
         label: "View Sales Tax Difference",
-        key: "67",
-
+        key: "/mis/view-sales-tax-difference"
       },
       {
         label: "Month Wise Total Value of Orders",
-        key: "68",
-
+        key: "/mis/month-wise-total-value-of-orders"
       },
       {
         label: "Monthly Submitted Order Report",
-        key: "69",
-
+        key: "/mis/monthly-submitted-order-report"
       },
       {
         label: "Zone Wise Product Wise Average Price",
-        key: "70",
-
+        key: "/mis/zone-wise-product-wise-average-price"
       },
       {
         label: "Orders Pending For Merck Approval",
-        key: "71",
-
+        key: "/mis/orders-pending-for-merck-approval"
       },
       {
         label: "Draft Order Status",
-        key: "72",
-
+        key: "/mis/draft-order-status"
       },
       {
         label: "Proportionate Freight",
-        key: "73",
-
+        key: "/mis/proportionate-freight"
       },
       {
         label: "Dead Orders",
-        key: "74",
-
+        key: "/mis/dead-orders"
       },
       {
         label: "Download Deleted Orders",
-        key: "75",
-
+        key: "/mis/download-deleted-orders"
       },
       {
         label: "Download Orders for Customers For Deleted Order Items",
-        key: "76",
-
+        key: "/mis/download-orders-for-customers-for-deleted-order-items"
       },
       {
         label: "Download Price List Report",
-        key: "77",
-
+        key: "/mis/download-price-list-report"
       },
       {
         label: "Login Logout Report",
-        key: "78",
-
+        key: "/mis/login-logout-report"
       },
       {
         label: "Audit Log Report",
-        key: "79",
-
+        key: "/mis/audit-log-report"
       }
     ],
-
   },
   {
     label: "Dispatches",
-    key: "80",
+    key: "/dispatches",
     children: [
       {
         label: "Download LR Details",
-        key: "81",
-
+        key: "/dispatches/download-lr-details",
       }
     ],
-
   },
   {
     label: "Complaints",
-    key: "82",
+    key: "/complaints",
     children: [
       {
         label: "Pending For Closure",
-        key: "83",
-
+        key: "/complaints/pending-for-closure",
       }
     ],
-
   },
   {
     label: "Shipment Tracking",
-    key: "84",
+    key: "/shipment-tracking",
     children: [
       {
         label: "Search Shipments",
-        key: "85",
-
+        key: "/shipment-tracking/search-shipments"
       },
       {
         label: "Retriggering Emails",
-        key: "86",
-
+        key: "/shipment-tracking/retriggering-emails"
       },
       {
         label: "Feedback Report",
-        key: "87",
-
+        key: "/shipment-tracking/feedback-report"
       },
       {
         label: "Dashboards",
-        key: "88",
-
+        key: "/shipment-tracking/dashboards"
       }
     ],
-
   },
   {
     label: "COA",
-    key: "89",
+    key: "/coa",
     children: [
       {
         label: "Upload Multiple Files",
-        key: "90",
-
+        key: "/coa/upload-multiple-files"
       },
       {
         label: "Upload Mapping Data",
-        key: "91",
-
+        key: "/coa/upload-mapping-data"
       }
     ],
-
   },
   {
     label: "Transaction view",
-    key: "92",
+    key: "/transaction-view",
     children: [
       {
         label: "Transaction Stuck For SAP Integration",
-        key: "93",
-
+        key: "/transaction-view/transaction-stuck-for-sap-integration"
       },
       {
         label: "Transaction Data",
-        key: "94",
-
+        key: "/transaction-view/transaction-data"
       }
     ],
-
   },
   {
     label: "Customer Annexure view",
-    key: "95"
+    key: "/customer-annexure-view"
   },
-  {
-    label: "horizontal-meun",
-    key: "96",
-    path: '/horizontal-menus'
-  },
-  {
-    label: "vertical-menu",
-    key: "97",
-    path: '/vertical-menus'
-  },
-  {
-    label: "inline-menu",
-    key: "98",
-    path: '/inline-menus'
-  }
 ];

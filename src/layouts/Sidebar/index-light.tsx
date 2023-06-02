@@ -7,9 +7,11 @@ import { useNavigate } from "react-router";
 const Index = ({
   collapsed,
   hideHeader,
+  theme,
 }: {
   collapsed: boolean;
   hideHeader?: boolean;
+  theme?: string;
 }) => {
   const navigate = useNavigate();
 
@@ -57,9 +59,6 @@ const Index = ({
         </h2>
       )}
       <Menu
-        className="sidebar-purple"
-        defaultSelectedKeys={["1", "2", "2"]}
-        defaultOpenKeys={["1", "2"]}
         mode="inline"
         inlineCollapsed={collapsed}
         items={MENUS}
