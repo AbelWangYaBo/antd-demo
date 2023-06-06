@@ -1,6 +1,5 @@
 import { Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
-import { Outlet } from "react-router";
 interface IProp {
   open?: boolean;
   children?: JSX.Element;

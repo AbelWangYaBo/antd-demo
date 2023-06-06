@@ -14,8 +14,33 @@ body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
   .app-main {
     flex: 1;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      z-index: 11;
+      width: 6px;
+    }
+    &::-webkit-scrollbar:horizontal {
+      height: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      width: 6px;
+      background: #b4bccc;
+    }
+    &::-webkit-scrollbar-corner {
+      background: #fff;
+    }
+    &::-webkit-scrollbar-track {
+      background: #fff;
+    }
+    &::-webkit-scrollbar-track-piece {
+      background: #fff;
+      width: 6px;
+    }
   }
 }
 .app-bar-container {
@@ -62,6 +87,30 @@ body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  // scrollbar
+  &::-webkit-scrollbar {
+    z-index: 11;
+    width: 6px;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    width: 6px;
+    background: #b4bccc;
+  }
+  &::-webkit-scrollbar-corner {
+    background: #fff;
+  }
+  &::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background: #fff;
+    width: 6px;
+  }
+  // scrollbar end
   .sidebar-purple {
     background-color: purple;
     color: #ffffff;
@@ -153,4 +202,8 @@ body {
     left: 0;
     z-index: 9;
   }
+}
+
+.app-container {
+  padding: 10px;
 }

@@ -7,11 +7,9 @@ import { useNavigate } from "react-router";
 const Index = ({
   collapsed,
   hideHeader,
-  theme,
 }: {
   collapsed: boolean;
   hideHeader?: boolean;
-  theme?: string;
 }) => {
   const navigate = useNavigate();
 

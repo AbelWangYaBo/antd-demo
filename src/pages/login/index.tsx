@@ -1,8 +1,7 @@
 import BackgroudnImage from "@/assets/Mkgaa800x600.png";
 import { Button, Form, Input, App } from "antd";
-import React, { useState } from "react";
 import { sigin } from "./mock";
-import LoadingMask from "@/components/loading-mask";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
   const initialValue = {
@@ -11,7 +10,7 @@ const Index = () => {
   };
   const [form] = Form.useForm();
   const { message } = App.useApp();
-  // form.initialValue
+  const navigate = useNavigate();
 
   const submit = () => {
     form
@@ -19,13 +18,12 @@ const Index = () => {
       .then(async (values) => {
         await sigin(values);
         message.success("Login Success!");
+        navigate("/");
       })
       .catch((err) => {
         console.error(err, err);
       });
   };
-
-  return <LoadingMask></LoadingMask>;
 
   return (
     <>

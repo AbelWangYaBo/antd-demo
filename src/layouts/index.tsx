@@ -7,6 +7,7 @@ import { useState } from "react";
 import useMediaQuery from "@/utils/use-media-query";
 import { Drawer } from "antd";
 import { CloseOutlined } from "@ant-design/icons";
+import BreadCrumb from "./breadcrumb";
 const Index = () => {
   const [collapsed, setCollapsed] = useState(false);
   const matches = useMediaQuery("(max-width: 1600px)");
@@ -105,18 +106,12 @@ const Index = () => {
           changeTheme={changeTheme}
         />
         <div>
+          <BreadCrumb />
           <Outlet />
         </div>
       </div>
       {/* <AppBar />
       <Siderbar /> */}
-    </div>
-  );
-
-  return (
-    <div>
-      <AppBar />
-      <Outlet />
     </div>
   );
 };
